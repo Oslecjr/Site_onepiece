@@ -1,0 +1,243 @@
+body {
+    background-image: url(../Imagens/mapaMundi.jpg);
+    height: 100vh;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+
+.container {
+
+
+    background-image: url(../Imagens/azulFarelado.jpeg);
+    max-width: 1090px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: auto;
+
+}
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    border: 2px dashed white;
+    border-radius: 30px;
+    /* Ajustado para pixels em vez de porcentagem */
+    padding: 10px;
+    /* Aumentado o preenchimento para melhor legibilidade */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adicionado fundo semi-transparente para legibilidade */
+    color: white;
+    /* Cor do texto branca */
+    margin: 20px 0;
+    /* Margem superior e inferior para afastar do conteúdo seguinte */
+}
+
+p {
+    text-indent: 5%;
+}
+
+h2 {
+    color: white;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+
+.texto {
+    flex-basis: 69%;
+    /* 60% do espaço disponível */
+    margin-right: 10px;
+    /* Espaço entre o texto e a infocaixa */
+}
+
+
+
+
+.infocaixa {
+    flex-basis: 26%;
+    /* 25% do espaço disponível */
+    background-color: #F7F7F7;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.infocaixa-titulo {
+    background-color: #0076A3;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.infocaixa-conteudo {
+    margin-top: 10px;
+}
+
+.infocaixa-item {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.infocaixa-rotulo {
+    font-weight: bold;
+    display: block;
+    background-color: #CCC;
+}
+
+.infocaixa-valor {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    width: 600px;
+    border: 2px solid white;
+    height: auto;
+    /* A altura será dimensionada automaticamente */
+}
+
+.belly {
+    width: 1em;
+    /* Define o tamanho igual ao tamanho da fonte (uma palavra) */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    vertical-align: middle;
+}
+
+.videoluffy {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        /* Reduza o preenchimento */
+        border-radius: 0;
+        /* Remova o raio da borda */
+    }
+
+    p {
+        text-indent: 5%;
+    }
+
+    .conteudo {
+        flex-direction: row;
+        /* Coluna única para dispositivos móveis */
+    }
+
+    .texto {
+        flex-basis: 65%;
+        /* Largura total para dispositivos móveis */
+        margin-right: 10px;
+        /* Remova a margem à direita */
+    }
+
+    .infocaixa {
+        flex-basis: 20%;
+        /* Largura total para dispositivos móveis */
+    }
+
+    h1 {
+        font-size: 36px;
+        /* Reduza o tamanho da fonte */
+        padding: 5px;
+        /* Reduza o preenchimento */
+        margin: 10px 0;
+        /* Ajuste a margem superior e inferior */
+        justify-content: space-around;
+    }
+}
+
+
+@media (max-width: 520px) {
+    .texto {
+        flex-basis: 55%;
+        /* Largura total para dispositivos móveis */
+        margin-right: 10px;
+        /* Remova a margem à direita */
+    }
+
+    p {
+        text-indent: 5%;
+    }
+
+    .infocaixa {
+        flex-basis: 20%;
+        /* Largura total para dispositivos móveis */
+    }
+
+}
+
+div.video {
+    position: relative;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+
+}
+
+div.video>iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+@media (max-width: 413px) {
+    .texto {
+        flex-basis: 55%;
+        /* Largura total para dispositivos móveis */
+        margin-right: 10px;
+        /* Remova a margem à direita */
+    }
+
+    p {
+        text-indent: 5%;
+    }
+
+    .infocaixa {
+        flex-basis: 10%;
+        /* Largura total para dispositivos móveis */
+    }
+
+}
+
+
+@media (max-width: 413px) {
+    .texto {
+        flex-basis: 100%;
+        /* Largura total para dispositivos móveis */
+        margin-right: 10px;
+        /* Remova a margem à direita */
+    }
+
+    p {
+        text-indent: 5%;
+    }
+
+    .infocaixa {
+        flex-basis: 50%;
+        /* Largura total para dispositivos móveis */
+    }
+
+}
